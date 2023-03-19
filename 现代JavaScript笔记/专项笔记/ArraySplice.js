@@ -15,3 +15,10 @@ const deleted = numbers.splice(2, 3);
 
 console.log(numbers);
 console.log(deleted);
+
+
+let arr = ['I', 'love', 'JavaScript'];
+arr.splice(1, 1, 'am', 'learning');
+//         startIndex, deleteCount, things to add...
+
+
