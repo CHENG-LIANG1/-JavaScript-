@@ -19,4 +19,4 @@
 5. undefined
 6. null
 7. NaN
-8. Object & Symbol
+8. [引用类型] Object & Symbol
