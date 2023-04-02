@@ -63,3 +63,14 @@ alert(age); // NaN 转换失败
 alert(Boolean("hello")); // true
 alert(Boolean("")); // false
 ```
+
+# 自增自减
+```javascript
+let count = 1;
+let a = counter++;
+alert(a); // 1
+
+let count = 1;
+let a = ++count;
+alert(a); // 2
+```
