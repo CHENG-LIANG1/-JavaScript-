@@ -99,3 +99,8 @@ let price: Price = 10;
 
 type Country = "America" | "China" | "Japan";
 let country: Country = "America";
+
+// function
+function addTwoNums( firstValue: number, secondValue: number) : number {
+    return firstValue + secondValue;
+}
