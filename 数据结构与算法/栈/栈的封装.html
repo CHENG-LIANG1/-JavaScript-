@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script> 
+  
+  
+function Stack() {
+  this.items = [];
+
+  // 1. push
+  Stack.prototype.push = function (element) {
+    this.items.push(element);
+  };
+
+  // 2. pop
+  Stack.prototype.pop = function () {
+    return this.items.pop();
+  };
+
+  // 3. peek 查看栈顶元素
+  Stack.prototype.peek = function () {
+    return this.items[this.items.length - 1];
+  };
+
+  // 4. isEmpty
+  Stack.prototype.isEmpty = function () {
+    return this.items.length === 0;
+  };
+
+  // 5. size
+  Stack.prototype.size = function () {
+    return this.items.length;
+  };
+
+  // 6. toString
+  Stack.prototype.toString = function () {
+    return this.items.toString();
+  };
+
+}
+
+
+function decimalToBinary(decNumber) {
+
+
+  let binaryString = '';
+  let s = new Stack();  
+  while (decNumber > 0) {
+    s.push(decNumber % 2);
+    decNumber = Math.floor(decNumber / 2);
+  }
+
+
+  while (!s.isEmpty()) {
+    binaryString += s.pop();
+  }
+  return binaryString;
+}
+
+  let bin = decimalToBinary(10);
+  alert(bin)
+  </script>
+  
+</body>
+</html>
